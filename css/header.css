@@ -30,6 +30,28 @@
   font-size: 18px;
   color: var(--light-color);
   line-height: 1.45em;
+  outline: none;
+  position: relative;
+  transition: text-shadow .4s ease-in-out;
+}
+
+.main-nav__link:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: currentColor;
+  transition: width .4s ease-in-out;
+}
+
+.main-nav__item:hover .main-nav__link:after {
+  width: 100%;
+}
+
+.main-nav__link:focus {
+  text-shadow: 2px 2px 4px currentColor;
 }
 
 .phone-contacts {
@@ -60,6 +82,12 @@
   font-size: 34px;
   padding: 0 8px;
   position: relative;
+  outline: none;
+  transition: text-shadow .4s ease-in-out;
+}
+
+.phone-contacts__phone-number:focus, .phone-contacts__phone-number:hover {
+  text-shadow: 2px 2px 4px currentColor;
 }
 
 .phone-contacts__phone-number::after {
@@ -78,6 +106,12 @@
   color: var(--light-color);
   border: none;
   background-color: transparent;
+  outline: none;
+  transition: text-shadow .4s ease-in-out;
+}
+
+.phone-contacts__search-btn:focus {
+  text-shadow: 2px 2px 4px currentColor;
 }
 
 .phone-contacts__search-form {
