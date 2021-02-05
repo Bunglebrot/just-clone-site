@@ -6,6 +6,7 @@ let searchForm = header.querySelector('.search-form');
 
 let mobileMenuBtn = header.querySelector('.mobile-menu__toggle-btn');
 let mobileNavMenu = header.querySelector('.mobile-menu');
+let mobileMenuCloseBtn = header.querySelector('.mobile-menu__close-btn');
 
 
 // скрытие и показ формы поиска по сайту
@@ -16,4 +17,8 @@ searchBtn.addEventListener('click', (e) => {
 // toggle для показа мобильного меню
 mobileMenuBtn.addEventListener('click', (e) => {
   mobileNavMenu.classList.toggle('mobile-menu_hidden');
+});
+
+mobileMenuCloseBtn.addEventListener('click', (e) => {
+  mobileNavMenu.classList.add('mobile-menu_hidden');
 });
