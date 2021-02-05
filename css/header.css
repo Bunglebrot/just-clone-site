@@ -1,0 +1,221 @@
+.header {
+  background-color: rgb(96, 46, 161);
+  padding: 22px 0;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 360px;
+  justify-content: space-around;
+  background-image: url(../img/header/bg-banner-wrap.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: left 30%; */
+}
+
+.header__main-info {
+  
+}
+
+.main-nav {
+  padding: 10px 100px 0;
+  margin-bottom: 45px;
+}
+
+.main-nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav__item {
+
+}
+
+.main-nav__item + .main-nav__item {
+  margin-left: 20px;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--light-color);
+  line-height: 1.45em;
+}
+
+.phone-contacts {
+  display: flex;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid var(--light-color);
+  border-top: 1px solid var(--light-color);
+}
+
+.phone-contacts__item + .phone-contacts__item {
+  margin-left: 8px;
+}
+
+.phone-contacts__phone-title {
+  font-family: var(--main-font);
+  color: var(--light-color);
+  font-size: 26px;
+}
+
+.phone-contacts__phone-title__uppercase {
+  text-transform: uppercase;
+}
+
+.phone-contacts__phone-number {
+  font-family: var(--main-font);
+  color: var(--light-color);
+  font-size: 34px;
+  padding: 0 8px;
+  position: relative;
+}
+
+.phone-contacts__phone-number::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--light-color);
+}
+
+.phone-contacts__search-btn {
+  margin-left: 8px;
+  padding: 10px;
+  color: var(--light-color);
+  border: none;
+  background-color: transparent;
+}
+
+.phone-contacts__search-form {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+.search-form {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 300px;
+}
+
+.search-form_hidden {
+  display: none;
+}
+
+.search-form__input {
+  padding-left: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+}
+
+.search-form__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  color: var(--cherry-color);
+}
+
+/* mobile menu */
+.header__mobile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  margin-top: 3rem;
+}
+
+.mobile-menu__wrapper {
+  position: relative;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  z-index: 777;
+  min-width: 300px;
+  background-color:#2b3664;
+}
+
+.mobile-menu_hidden {
+  display: none;
+}
+
+.mobile-menu__toggle-btn {
+  position: relative;
+  background-color: var(--cherry-color);
+  color: var(--light-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 30px;
+}
+
+.mobile-menu__toggle-btn:before {
+  content: "\f0c9";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.mobile-menu__list {
+  list-style: none;
+}
+
+.mobile-menu__item {
+  padding: 10px;
+}
+
+.mobile-menu__link {
+  font-size: 16px;
+  color: var(--light-color);
+  line-height: 1.45em;
+
+}
+
+.mobile-menu__phone-number {
+  position: relative;
+  background-color: var(--cherry-color);
+  color: var(--light-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 14px 28px;
+  padding-left: 40px;
+  border: none;
+}
+
+.mobile-menu__phone-number::before {
+  content: '\f095';
+  font-family: FontAwesome;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+
+/* media queries */
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 6rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header__main-info {
+    display: none;
+  }
+  
+  .header__mobile-info {
+    display: flex;
+  }
+}
