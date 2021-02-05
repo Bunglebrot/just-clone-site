@@ -1,0 +1,21 @@
+.main-section {
+  min-height: 500px;
+}
+
+.main-header {
+  font-family: var(--main-font);
+  color: #0b1536;
+  font-size: 50px;
+}
+
+.section__header {
+
+}
+
+.section-motivation {
+  min-height: 590px;
+  background-color: #fff;
+  background-image: url('../img/main-block/bg-container-bottom-wrap.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
